@@ -82,7 +82,7 @@ public class TurkishSyllabication {
                     divideWordIntoSyllables(word.substring(firstVowelIndex + 2), syllables);
                 }
                 
-                //otherwise, divide after second consonat. e.g. Türk-çe
+                //otherwise, divide after second consonant. e.g. Türk-çe
                 else{
                     syllables.add(word.substring(0, firstVowelIndex + 3));
                     divideWordIntoSyllables(word.substring(firstVowelIndex + 3), syllables);
