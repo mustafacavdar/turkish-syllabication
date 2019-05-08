@@ -13,15 +13,9 @@ import java.util.ArrayList;
  */
 public class TurkishSyllabication {
 
-    
-    public enum Vowels{
-        
-    }
-    /**
-     * @param args the command line arguments
-     */
+ 
     public static void main(String[] args) {
-        // TODO code application logic here
+     
         String word = "";
         ArrayList<String> syllables = new ArrayList<>();
         System.out.println(divideWordIntoSyllables(word, syllables));
@@ -71,7 +65,7 @@ public class TurkishSyllabication {
                 divideWordIntoSyllables(word.substring(firstVowelIndex + 2), syllables);
             }
             
-            //if next tree are all consonants
+            //if next three are all consonants
             else{
                 
                 String temp = word.substring(firstVowelIndex + 1, firstVowelIndex + 4);
